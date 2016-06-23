@@ -811,7 +811,6 @@ public class ClientSide
 
 			GlStateManager.enableBlend();
 			GlStateManager.tryBlendFuncSeparate( GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA, 1, 0 );
-			GlStateManager.color( 0.0F, 0.0F, 0.0F, 0.4F );
 			GL11.glLineWidth( 2.0F );
 			GlStateManager.disableTexture2D();
 			GlStateManager.depthMask( false );
@@ -822,9 +821,8 @@ public class ClientSide
 			}
 
 			GlStateManager.disableDepth();
-			GlStateManager.color( 0.0F, 0.0F, 0.0F, 0.1F );
 
-			RenderGlobal.func_189697_a( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ), 0.0F, 0.0F, 0.0F, 0.4F );
+			RenderGlobal.func_189697_a( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ), 0.0F, 0.0F, 0.0F, 0.1F );
 
 			GlStateManager.enableDepth();
 			GlStateManager.depthMask( true );
