@@ -818,13 +818,13 @@ public class ClientSide
 
 			if ( !NormalBoundingBox )
 			{
-				RenderGlobal.drawSelectionBoundingBox( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ) );
+				RenderGlobal.func_189697_a( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ), 0.0F, 0.0F, 0.0F, 0.4F );
 			}
 
 			GlStateManager.disableDepth();
 			GlStateManager.color( 0.0F, 0.0F, 0.0F, 0.1F );
 
-			RenderGlobal.drawSelectionBoundingBox( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ) );
+			RenderGlobal.func_189697_a( bb.expand( 0.0020000000949949026D, 0.0020000000949949026D, 0.0020000000949949026D ).offset( -x + blockPos.getX(), -y + blockPos.getY(), -z + blockPos.getZ() ), 0.0F, 0.0F, 0.0F, 0.4F );
 
 			GlStateManager.enableDepth();
 			GlStateManager.depthMask( true );
