@@ -106,8 +106,7 @@ public class ModelQuadReader extends BaseModelReader
 			U1 = U2;
 			U2 = tempU;
 		}
-
-		if (faceQuad == EnumFacing.UP)
+		else if ( faceQuad == EnumFacing.UP )
 		{
 			final int tempV = V1;
 			V1 = V2;
