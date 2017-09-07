@@ -23,13 +23,10 @@ public abstract class BaseBakedPerspectiveModel implements IBakedModel
 
 	static
 	{
-		// for some reason these are not identical to vanilla's Block.json, I
-		// don't know why.. but its close.
-
 		gui = getMatrix( 0, 0, 0, 30, 225, 0, 0.625f );
-		ground = getMatrix( 0, 0, 0, 0, 0, 0, 0.25f );
+		ground = getMatrix( 0, 3 / 16.0f, 0, 0, 0, 0, 0.25f );
 		fixed = getMatrix( 0, 0, 0, 0, 0, 0, 0.5f );
-		thirdPerson_lefthand = thirdPerson_righthand = getMatrix( 0, 0, 0, 75, 45, 0, 0.375f );
+		thirdPerson_lefthand = thirdPerson_righthand = getMatrix( 0, 2.5f / 16.0f, 0, 75, 45, 0, 0.375f );
 		firstPerson_righthand = getMatrix( 0, 0, 0, 0, 45, 0, 0.40f );
 		firstPerson_lefthand = getMatrix( 0, 0, 0, 0, 0, 225, 0.40f );
 	}
