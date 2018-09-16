@@ -106,7 +106,7 @@ public interface IBitAccess
 	/**
 	 * Mirrors all bits in the {@link IBitAccess} in the passed axis.
 	 *
-	 * @param mirror
+	 * @param axis
 	 */
 	IBitAccess mirror(
 			Axis axis );
