@@ -25,8 +25,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -268,32 +266,6 @@ public class BitAccess implements IBitAccess
 		}
 
 		return new BitQueryResults( air, solid, fluid );
-	}
-
-	@Override
-	public boolean mirror(
-			final Mirror mirror )
-	{
-		VoxelBlob blobMirrored = ModUtil.mirror( blob, mirror );
-		if ( blobMirrored != null )
-		{
-			blob.fill( blobMirrored );
-			return true;
-		}
-		return false;
-	}
-
-	@Override
-	public boolean rotate(
-			final Rotation rotation )
-	{
-		VoxelBlob blobRotated = ModUtil.rotate( blob, rotation );
-		if ( blobRotated != null )
-		{
-			blob.fill( blobRotated );
-			return true;
-		}
-		return false;
 	}
 
 }
