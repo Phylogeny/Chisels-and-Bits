@@ -2,8 +2,8 @@ package mod.chiselsandbits.chiseledblock;
 
 import java.io.IOException;
 
+import mod.chiselsandbits.api.BlobStats;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
-import mod.chiselsandbits.chiseledblock.data.VoxelBlob.BlobStats;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlobStateReference;
 import mod.chiselsandbits.chiseledblock.serialization.StringStates;
 import mod.chiselsandbits.core.ChiselsAndBits;

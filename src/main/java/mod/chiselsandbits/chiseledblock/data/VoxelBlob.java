@@ -21,6 +21,8 @@ import java.util.zip.GZIPOutputStream;
 import java.util.zip.InflaterInputStream;
 
 import io.netty.buffer.Unpooled;
+import mod.chiselsandbits.api.TypeRef;
+import mod.chiselsandbits.api.BlobStats;
 import mod.chiselsandbits.chiseledblock.BlockBitInfo;
 import mod.chiselsandbits.chiseledblock.serialization.BitStream;
 import mod.chiselsandbits.chiseledblock.serialization.BlobSerializer;
@@ -570,31 +572,6 @@ public final class VoxelBlob implements IVoxelSrc
 			dest.visibleFace = mySpot != 0;
 		}
 	}
-
-	public static class BlobStats
-	{
-		public int mostCommonState;
-		public int mostCommonStateTotal;
-
-		public boolean isFullBlock;
-
-		public float blockLight;
-		public boolean isNormalBlock;
-	};
-
-	public static class TypeRef
-	{
-		final public int stateId;
-		public int quantity;
-
-		public TypeRef(
-				final int id,
-				final int q )
-		{
-			stateId = id;
-			quantity = q;
-		}
-	};
 
 	public Map<Integer, Integer> getBlockSums()
 	{

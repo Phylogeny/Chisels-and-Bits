@@ -2,6 +2,7 @@ package mod.chiselsandbits.crafting;
 
 import java.util.List;
 
+import mod.chiselsandbits.api.TypeRef;
 import mod.chiselsandbits.api.IBitAccess;
 import mod.chiselsandbits.api.ItemType;
 import mod.chiselsandbits.chiseledblock.BlockBitInfo;
@@ -9,7 +10,6 @@ import mod.chiselsandbits.chiseledblock.ItemBlockChiseled;
 import mod.chiselsandbits.chiseledblock.data.BitIterator;
 import mod.chiselsandbits.chiseledblock.data.IntegerBox;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
-import mod.chiselsandbits.chiseledblock.data.VoxelBlob.TypeRef;
 import mod.chiselsandbits.core.ChiselsAndBits;
 import mod.chiselsandbits.core.api.BitAccess;
 import mod.chiselsandbits.helpers.ModUtil;

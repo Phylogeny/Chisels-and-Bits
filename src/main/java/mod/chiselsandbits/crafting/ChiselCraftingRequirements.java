@@ -3,9 +3,9 @@ package mod.chiselsandbits.crafting;
 import java.util.ArrayList;
 import java.util.List;
 
+import mod.chiselsandbits.api.TypeRef;
 import mod.chiselsandbits.bitbag.BagInventory;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
-import mod.chiselsandbits.chiseledblock.data.VoxelBlob.TypeRef;
 import mod.chiselsandbits.helpers.ModUtil;
 import mod.chiselsandbits.items.ItemBitBag;
 import mod.chiselsandbits.items.ItemChiseledBit;

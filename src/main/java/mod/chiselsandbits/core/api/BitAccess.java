@@ -1,22 +1,24 @@
 package mod.chiselsandbits.core.api;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Nullable;
 
 import mod.chiselsandbits.api.APIExceptions.SpaceOccupied;
 import mod.chiselsandbits.api.BitQueryResults;
+import mod.chiselsandbits.api.TypeRef;
 import mod.chiselsandbits.api.IBitAccess;
 import mod.chiselsandbits.api.IBitBrush;
 import mod.chiselsandbits.api.IBitVisitor;
 import mod.chiselsandbits.api.ItemType;
+import mod.chiselsandbits.api.BlobStats;
 import mod.chiselsandbits.chiseledblock.BlockChiseled;
 import mod.chiselsandbits.chiseledblock.NBTBlobConverter;
 import mod.chiselsandbits.chiseledblock.TileEntityBlockChiseled;
 import mod.chiselsandbits.chiseledblock.data.BitIterator;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
-import mod.chiselsandbits.chiseledblock.data.VoxelBlob.BlobStats;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlobStateReference;
 import mod.chiselsandbits.client.UndoTracker;
 import mod.chiselsandbits.core.ChiselsAndBits;
@@ -296,6 +298,18 @@ public class BitAccess implements IBitAccess
         }
         return false;
 
+	}
+
+	@Override
+	public List<TypeRef> getBlockCounts()
+	{
+		return blob.getBlockCounts();
+	}
+
+	@Override
+	public BlobStats getVoxelStats()
+	{
+		return blob.getVoxelStats();
 	}
 
 }
