@@ -1,11 +1,11 @@
 package mod.chiselsandbits.api;
 
-public class TypeRef
+public class StateCount
 {
 	final public int stateId;
 	public int quantity;
 
-	public TypeRef(
+	public StateCount(
 			final int id,
 			final int q )
 	{

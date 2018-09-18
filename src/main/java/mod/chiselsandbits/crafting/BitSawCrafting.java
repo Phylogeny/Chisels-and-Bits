@@ -2,7 +2,7 @@ package mod.chiselsandbits.crafting;
 
 import java.util.List;
 
-import mod.chiselsandbits.api.TypeRef;
+import mod.chiselsandbits.api.StateCount;
 import mod.chiselsandbits.api.IBitAccess;
 import mod.chiselsandbits.api.ItemType;
 import mod.chiselsandbits.chiseledblock.BlockBitInfo;
@@ -236,13 +236,13 @@ public class BitSawCrafting extends CustomRecipe
 
 		if ( a.equals( b ) )
 		{
-			final List<TypeRef> refs = a.getBlockCounts();
+			final List<StateCount> refs = a.getStateCounts();
 
 			if ( refs.size() == 2 )
 			{
 				boolean good = false;
 				int outState = -1;
-				for ( final TypeRef tr : refs )
+				for ( final StateCount tr : refs )
 				{
 					if ( tr.stateId != 0 && tr.quantity == 1 )
 					{

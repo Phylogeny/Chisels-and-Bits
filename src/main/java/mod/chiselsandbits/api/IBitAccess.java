@@ -130,13 +130,13 @@ public interface IBitAccess
 	 * 
 	 * @return list of state counts
 	 */
-	List<TypeRef> getBlockCounts();
+	List<StateCount> getStateCounts();
 
 	/**
 	 * Returns a variety of information about the {@link IBitAccess}, such as its most common state and its count.
 	 * 
 	 * @return voxel stats object
 	 */
-	BlobStats getVoxelStats();
+	VoxelStats getVoxelStats();
 
 }

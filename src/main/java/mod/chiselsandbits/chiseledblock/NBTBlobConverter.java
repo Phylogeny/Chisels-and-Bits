@@ -2,7 +2,7 @@ package mod.chiselsandbits.chiseledblock;
 
 import java.io.IOException;
 
-import mod.chiselsandbits.api.BlobStats;
+import mod.chiselsandbits.api.VoxelStats;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlobStateReference;
 import mod.chiselsandbits.chiseledblock.serialization.StringStates;
@@ -230,7 +230,7 @@ public class NBTBlobConverter
 	{
 		final VoxelBlob vb = getRef().getVoxelBlob();
 
-		final BlobStats common = vb.getVoxelStats();
+		final VoxelStats common = vb.getVoxelStats();
 		final float floatLight = common.blockLight;
 
 		isNormalCube = common.isNormalBlock;

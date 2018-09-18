@@ -1,6 +1,6 @@
 package mod.chiselsandbits.api;
 
-public class BlobStats
+public class VoxelStats
 {
 	public int mostCommonState;
 	public int mostCommonStateTotal;

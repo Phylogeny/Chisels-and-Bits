@@ -3,7 +3,7 @@ package mod.chiselsandbits.crafting;
 import java.util.ArrayList;
 import java.util.List;
 
-import mod.chiselsandbits.api.TypeRef;
+import mod.chiselsandbits.api.StateCount;
 import mod.chiselsandbits.bitbag.BagInventory;
 import mod.chiselsandbits.chiseledblock.data.VoxelBlob;
 import mod.chiselsandbits.helpers.ModUtil;
@@ -68,10 +68,10 @@ class ChiselCraftingRequirements
 			return isValid;
 		}
 
-		final List<TypeRef> count = voxelBlob.getBlockCounts();
+		final List<StateCount> count = voxelBlob.getStateCounts();
 
 		isValid = true;
-		for ( final TypeRef ref : count )
+		for ( final StateCount ref : count )
 		{
 			if ( ref.stateId != 0 )
 			{
