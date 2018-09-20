@@ -240,6 +240,7 @@ public interface IChiselAndBitsAPI
 	 * @param alpha
 	 *            Should be a value 0-255 left bit-shifted by 24 (Ex: 127 << 24).
 	 */
+	@SideOnly( Side.CLIENT )
 	void renderModel(
 			IBakedModel model,
 			World world,
@@ -255,6 +256,7 @@ public interface IChiselAndBitsAPI
 	 * @param isUnplaceable
 	 *            if true, the block will be rendered with a decreased alpha value.
 	 */
+	@SideOnly( Side.CLIENT )
 	void renderGhostModel(
 			IBakedModel model,
 			World world,
