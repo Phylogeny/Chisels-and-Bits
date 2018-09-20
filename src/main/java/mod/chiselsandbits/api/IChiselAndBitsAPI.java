@@ -238,7 +238,7 @@ public interface IChiselAndBitsAPI
 	 * @param world
 	 * @param pos
 	 * @param alpha
-	 *            Should be a value 0-255 left bit-shifted by 24 (Ex: 127 << 24).
+	 *            Should be 0-255.
 	 */
 	@SideOnly( Side.CLIENT )
 	void renderModel(

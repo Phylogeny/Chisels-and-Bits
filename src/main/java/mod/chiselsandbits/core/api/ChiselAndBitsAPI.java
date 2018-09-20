@@ -448,7 +448,7 @@ public class ChiselAndBitsAPI implements IChiselAndBitsAPI
 			final BlockPos pos,
 			final int alpha )
 	{
-		RenderHelper.renderModel( model, world, pos, alpha );
+		RenderHelper.renderModel( model, world, pos, alpha << 24 );
 	}
 
 	@Override
